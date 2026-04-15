@@ -133,7 +133,7 @@ strong { color: var(--white); }
 .hero-eyebrow { display: inline-flex; align-items: center; gap: 12px; font-family: 'Raleway',sans-serif; font-size: 0.72rem; font-weight: 800; letter-spacing: 0.35em; text-transform: uppercase; color: var(--gold-bright); margin-bottom: 26px; text-shadow: 0 0 14px rgba(255,232,77,0.7); }
 .hero-eyebrow::before, .hero-eyebrow::after { content: ''; display: block; width: 35px; height: 2px; background: var(--gold-gradient-h); border-radius: 2px; box-shadow: 0 0 6px rgba(255,184,0,0.8); }
 
-.promo-title { font-family: 'Cormorant Garamond',serif !important; font-size: clamp(3rem,5.5vw,5.2rem) !important; font-weight: 700 !important; line-height: 1.12 !important; color: var(--white) !important; margin-bottom: 28px; }
+.promo-title { font-family: 'Cormorant Garamond',serif !important; font-size: clamp(1.8rem, 2.8vw, 2.8rem) !important; font-weight: 700 !important; line-height: 1.2 !important; color: var(--white) !important; margin-bottom: 28px; }
 .promo-title .gold-text { background: var(--gold-gradient); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; filter: drop-shadow(0 0 20px rgba(255,184,0,0.5)); }
 
 .hero-description { font-size: 1.1rem; color: #CCCCCC; max-width: 520px; margin-bottom: 44px; line-height: 1.9; }
@@ -348,7 +348,7 @@ footer { background: var(--black-2); border-top: 1px solid var(--border-bright);
   .contact-info-panel { border-right: none; border-bottom: 1px solid var(--border); }
 }
 @media (max-width: 768px) {
-  .promo-title { font-size: 2.5rem !important; }
+  .promo-title { font-size: 1.8rem !important; }
   .section-title { margin-bottom: 44px; }
   .cta-box { padding: 44px 22px; }
   .contact-info-panel, .contact-form-panel { padding: 36px 24px; }

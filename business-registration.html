@@ -3,19 +3,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>5S Tax Solutions — Expert Tax & Financial Advisory</title>
-
-  <!-- Bootstrap -->
+  <title>Business Registration & Licenses | 5S Tax Solutions</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-  <!-- AOS -->
   <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
-  <!-- Font Awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
-  <!-- Swiper -->
-  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
-  <!-- Google Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Raleway:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
   <style>
 /* ============================================================
@@ -153,7 +144,7 @@ strong { color: var(--white); }
 .hero-eyebrow { display: inline-flex; align-items: center; gap: 12px; font-family: 'Raleway',sans-serif; font-size: 0.72rem; font-weight: 800; letter-spacing: 0.35em; text-transform: uppercase; color: var(--gold-bright); margin-bottom: 26px; text-shadow: 0 0 14px rgba(255,232,77,0.7); }
 .hero-eyebrow::before, .hero-eyebrow::after { content: ''; display: block; width: 35px; height: 2px; background: var(--gold-gradient-h); border-radius: 2px; box-shadow: 0 0 6px rgba(255,184,0,0.8); }
 
-.promo-title { font-family: 'Cormorant Garamond',serif !important; font-size: clamp(1.8rem, 2.8vw, 2.8rem) !important; font-weight: 700 !important; line-height: 1.2 !important; color: var(--white) !important; margin-bottom: 28px; }
+.promo-title { font-family: 'Cormorant Garamond',serif !important; font-size: clamp(3rem,5.5vw,5.2rem) !important; font-weight: 700 !important; line-height: 1.12 !important; color: var(--white) !important; margin-bottom: 28px; }
 .promo-title .gold-text { background: var(--gold-gradient); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; filter: drop-shadow(0 0 20px rgba(255,184,0,0.5)); }
 
 .hero-description { font-size: 1.1rem; color: #CCCCCC; max-width: 520px; margin-bottom: 44px; line-height: 1.9; }
@@ -335,7 +326,8 @@ footer { background: var(--black-2); border-top: 1px solid var(--border-bright);
 .cta-box { background: linear-gradient(135deg, var(--black-3) 0%, #0A0600 100%); border: 1px solid var(--border-bright); border-radius: var(--radius-xl); padding: 70px 40px; text-align: center; position: relative; overflow: hidden; box-shadow: var(--shadow-gold-lg); }
 .cta-box::before { content: ''; position: absolute; inset: 0; background: radial-gradient(ellipse at 50% 0%, rgba(255,184,0,0.12) 0%, transparent 60%); }
 .cta-box::after { content: ''; position: absolute; bottom: -80px; left: 50%; transform: translateX(-50%); width: 400px; height: 400px; border-radius: 50%; background: radial-gradient(circle, rgba(255,184,0,0.06) 0%, transparent 70%); }
-.cta-box > * { position: relative; z-index: 1; }
+.cta-box > * { position: relative; z-index: 2; }
+.cta-box::before, .cta-box::after { pointer-events: none; }
 .cta-box h2 { margin-bottom: 16px; font-size: clamp(1.8rem,3vw,2.6rem); }
 .cta-box p { max-width: 500px; margin: 0 auto 36px; font-size: 1.05rem; color: #AAAAAA; }
 
@@ -368,7 +360,7 @@ footer { background: var(--black-2); border-top: 1px solid var(--border-bright);
   .contact-info-panel { border-right: none; border-bottom: 1px solid var(--border); }
 }
 @media (max-width: 768px) {
-  .promo-title { font-size: 1.8rem !important; }
+  .promo-title { font-size: 2.5rem !important; }
   .section-title { margin-bottom: 44px; }
   .cta-box { padding: 44px 22px; }
   .contact-info-panel, .contact-form-panel { padding: 36px 24px; }
@@ -377,36 +369,26 @@ footer { background: var(--black-2); border-top: 1px solid var(--border-bright);
 }
 [data-aos] { pointer-events: none; }
 [data-aos].aos-animate { pointer-events: auto; }
-  /* AOS fallback — show content even if AOS never fires */
-  [data-aos] { opacity:1!important; transform:none!important; transition:none!important; }
+  [data-aos]{opacity:1!important;transform:none!important;}
   </style>
 </head>
 <body>
-
-<!-- Cursor Glow -->
 <div class="cursor-glow"></div>
-
-<!-- ===================== NAVBAR ===================== -->
 <nav id="navbar" class="navbar navbar-expand-lg">
   <div class="container">
-    <a class="navbar-brand" href="index.html">
-      <img src="images/logo1.png" alt="5S Tax Solutions" onerror="this.style.display='none'">
-      <span></span>
-    </a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMain">
-      <span class="navbar-toggler-icon"></span>
-    </button>
+    <a class="navbar-brand" href="index.html"><img src="images/logo1.png" alt="" style="max-height:40px;" onerror="this.style.display='none'"><span></span></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMain"><span class="navbar-toggler-icon"></span></button>
     <div class="collapse navbar-collapse" id="navMain">
       <ul class="navbar-nav ms-auto align-items-lg-center">
-        <li class="nav-item"><a class="nav-link active" href="#banner">Home</a></li>
-        <li class="nav-item"><a class="nav-link" href="#why-choose-us">Why Us</a></li>
+        <li class="nav-item"><a class="nav-link" href="index.html#banner">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="index.html#why-choose-us">Why Us</a></li>
         <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Services</a>
+          <a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown">Services</a>
           <ul class="dropdown-menu">
             <li><a class="dropdown-item" href="gst-services.html"><span class="item-icon"><i class="fas fa-file-invoice-dollar"></i></span>GST Services</a></li>
-            <li><a class="dropdown-item" href="income-tax.html"><span class="item-icon"><i class="fas fa-rupee-sign"></i></span>Income Tax & TDS</a></li>
-            <li><a class="dropdown-item" href="business-registration.html"><span class="item-icon"><i class="fas fa-briefcase"></i></span>Business Registration</a></li>
-            <li><a class="dropdown-item" href="import-export.html"><span class="item-icon"><i class="fas fa-globe"></i></span>Import, Export & Trade</a></li>
+            <li><a class="dropdown-item" href="income-tax.html"><span class="item-icon"><i class="fas fa-rupee-sign"></i></span>Income Tax &amp; TDS</a></li>
+            <li><a class="dropdown-item active" href="business-registration.html"><span class="item-icon"><i class="fas fa-briefcase"></i></span>Business Registration</a></li>
+            <li><a class="dropdown-item" href="import-export.html"><span class="item-icon"><i class="fas fa-globe"></i></span>Import, Export &amp; Trade</a></li>
             <li><a class="dropdown-item" href="corporate-compliance.html"><span class="item-icon"><i class="fas fa-building"></i></span>Corporate Compliance</a></li>
             <li><a class="dropdown-item" href="accounting.html"><span class="item-icon"><i class="fas fa-chart-line"></i></span>Financial Advisory</a></li>
             <li><a class="dropdown-item" href="identity-services.html"><span class="item-icon"><i class="fas fa-id-card"></i></span>Identity &amp; Govt Services</a></li>
@@ -414,434 +396,124 @@ footer { background: var(--black-2); border-top: 1px solid var(--border-bright);
             <li><a class="dropdown-item" href="services.html" style="color:var(--gold)!important;font-weight:700;"><span class="item-icon"><i class="fas fa-th-large"></i></span>View All Services</a></li>
           </ul>
         </li>
-        <li class="nav-item"><a class="nav-link" href="#testimonials">Testimonials</a></li>
-        <li class="nav-item"><a class="nav-link" href="#contact-us">Contact</a></li>
-        <li class="nav-item ms-lg-3">
-          <a href="#contact-us" class="btn-gold" style="padding:10px 22px;font-size:0.78rem;">Free Consultation</a>
-        </li>
+        <li class="nav-item"><a class="nav-link" href="index.html#contact-us">Contact</a></li>
+        <li class="nav-item ms-lg-3"><a href="index.html#contact-us" class="btn-gold" style="padding:10px 22px;font-size:0.78rem;">Free Consultation</a></li>
       </ul>
     </div>
   </div>
 </nav>
-
-<!-- ===================== HERO BANNER ===================== -->
-<section id="banner">
-  <div class="hero-bg-pattern"></div>
-  <div class="hero-grid-lines"></div>
+<section class="page-hero">
   <div class="container">
+    <div class="breadcrumb-nav" data-aos="fade-down"><a href="index.html">Home</a><span class="separator">&#8250;</span><a href="services.html">Services</a><span class="separator">&#8250;</span><span style="color:var(--white-muted)">Business Registration and</span></div>
     <div class="row align-items-center g-5">
-      <div class="col-lg-6" data-aos="fade-right" data-aos-duration="900">
-        <div class="hero-eyebrow">
-          <span></span>
-          Trusted Tax Professionals Since 2015
-          <span></span>
-        </div>
-        <h1 class="promo-title">
-          Simplify Your <span class="gold-text">Tax & Financial</span> Compliance
-        </h1>
-        <p class="hero-description">
-          Expert GST, Income Tax, Corporate Compliance, and Financial Advisory services. We handle the complexity so you can focus on growing your business.
-        </p>
-        <div class="hero-cta-group">
-          <a href="#contact-us" class="btn-gold">
-            <i class="fas fa-calendar-check"></i> Book Consultation
-          </a>
-          <a href="services.html" class="btn-outline-gold">
-            <i class="fas fa-th-large"></i> Our Services
-          </a>
-        </div>
-        <div class="hero-trust-badges">
-          <div class="trust-badge"><i class="fas fa-shield-alt"></i> 100% Compliance</div>
-          <div class="trust-badge"><i class="fas fa-clock"></i> On-Time Filing</div>
-          <div class="trust-badge"><i class="fas fa-users"></i> 500+ Clients</div>
-        </div>
+      <div class="col-lg-7" data-aos="fade-right">
+        <div class="hero-eyebrow"><span></span> Startup and Business Licensing <span></span></div>
+        <h1>Business Registration and <span style="background:var(--gold-gradient);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;">Licenses</span></h1>
+        <p class="hero-desc">Start your business on the right legal foundation. Company incorporation, trademark, MSME, FSSAI, Corporation License, and Security Agency license - all under one roof.</p>
+        <div class="hero-badge-row"><span class="hero-badge"><i class="fas fa-check-circle"></i> Company Registration</span><span class="hero-badge"><i class="fas fa-check-circle"></i> Trademark</span><span class="hero-badge"><i class="fas fa-check-circle"></i> MSME / Udyam</span><span class="hero-badge"><i class="fas fa-check-circle"></i> FSSAI</span><span class="hero-badge"><i class="fas fa-check-circle"></i> Corporation License</span><span class="hero-badge"><i class="fas fa-check-circle"></i> Security License</span></div>
       </div>
-      <div class="col-lg-6" data-aos="fade-left" data-aos-duration="900" data-aos-delay="150">
-        <div class="hero-image-wrap">
-          <img src="images/banner.png" alt="Tax Solutions" onerror="this.src='https://placehold.co/560x420/0F0F0F/C9A227?text=5S+Tax+Solutions'">
-          <div class="floating-card floating-card-1">
-            <div class="fc-number">500<span style="font-size:1.2rem;color:var(--gold)">+</span></div>
-            <div class="fc-label">Happy Clients</div>
-          </div>
-          <div class="floating-card floating-card-2">
-            <div class="fc-number">10<span style="font-size:1.2rem;color:var(--gold)">+</span></div>
-            <div class="fc-label">Years of Experience</div>
-          </div>
-        </div>
+      <div class="col-lg-5 text-center" data-aos="fade-left">
+        <img src="images/corporate-compliances.png" alt="Business Registration" class="feature-image" style="max-height:340px;" onerror="this.onerror=null;this.src='https://placehold.co/480x340/111111/FFB800?text=Business+Registration'" >
       </div>
     </div>
   </div>
 </section>
-
-<!-- ===================== STATS ===================== -->
-<section id="stats">
-  <div class="container">
-    <div class="row g-0">
-      <div class="col-6 col-md-3" data-aos="fade-up" data-aos-delay="0">
-        <div class="stat-item">
-          <i class="fas fa-users stat-icon"></i>
-          <span class="stat-number" data-target="500">0</span>
-          <span class="stat-label">Happy Clients</span>
-        </div>
-      </div>
-      <div class="col-6 col-md-3" data-aos="fade-up" data-aos-delay="100">
-        <div class="stat-item">
-          <i class="fas fa-file-alt stat-icon"></i>
-          <span class="stat-number" data-target="2000">0</span>
-          <span class="stat-label">Returns Filed</span>
-        </div>
-      </div>
-      <div class="col-6 col-md-3" data-aos="fade-up" data-aos-delay="200">
-        <div class="stat-item">
-          <i class="fas fa-award stat-icon"></i>
-          <span class="stat-number" data-target="10">0</span>
-          <span class="stat-label">Years Experience</span>
-        </div>
-      </div>
-      <div class="col-6 col-md-3" data-aos="fade-up" data-aos-delay="300">
-        <div class="stat-item">
-          <i class="fas fa-check-circle stat-icon"></i>
-          <span class="stat-number" data-target="99">0</span>
-          <span class="stat-label">% Client Satisfaction</span>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ===================== WHY CHOOSE US ===================== -->
-<section id="why-choose-us">
-  <div class="container">
-    <div class="section-title" data-aos="fade-up">
-      <span class="overline">Our Advantage</span>
-      <h2>Why Choose 5S Tax Solutions</h2>
-      <div class="title-line"><span></span><i class="fas fa-diamond"></i><span></span></div>
-      <p class="subtitle">We combine deep expertise with a client-first approach to deliver results that matter for your business.</p>
-    </div>
-    <div class="row g-4">
-      <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="0">
-        <div class="about-card">
-          <div class="about-icon-wrap"><i class="fas fa-user-graduate"></i></div>
-          <h4>Expert CA Team</h4>
-          <p>Qualified Chartered Accountants with deep domain expertise across tax, audit, and corporate law.</p>
-        </div>
-      </div>
-      <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="100">
-        <div class="about-card">
-          <div class="about-icon-wrap"><i class="fas fa-bolt"></i></div>
-          <h4>Fast Turnaround</h4>
-          <p>We value your time. Quick processing and timely filing ensure you never miss a deadline.</p>
-        </div>
-      </div>
-      <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="200">
-        <div class="about-card">
-          <div class="about-icon-wrap"><i class="fas fa-shield-alt"></i></div>
-          <h4>100% Compliance</h4>
-          <p>Meticulous attention to regulatory requirements protects your business from penalties and notices.</p>
-        </div>
-      </div>
-      <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="300">
-        <div class="about-card">
-          <div class="about-icon-wrap"><i class="fas fa-headset"></i></div>
-          <h4>Dedicated Support</h4>
-          <p>A personal relationship manager is always available to answer your questions and guide you.</p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ===================== SERVICES PREVIEW ===================== -->
-<section id="services" style="padding:100px 0; background: var(--black-2);">
+<section class="info-section">
   <div class="container">
     <div class="section-title" data-aos="fade-up">
       <span class="overline">What We Offer</span>
-      <h2>Our Expert Services</h2>
+      <h2>Our Services Include</h2>
       <div class="title-line"><span></span><i class="fas fa-diamond"></i><span></span></div>
-      <p class="subtitle">Comprehensive tax, compliance, and financial solutions tailored to every stage of your business journey.</p>
     </div>
-    <div class="row g-4">
-      <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="0">
-        <div class="service-card h-100">
-          <div class="service-img-wrapper">
-            <img src="images/gst.png" alt="GST Services" onerror="this.src='https://placehold.co/600x300/0F0F0F/C9A227?text=GST+Services'">
-            <div class="service-img-overlay"></div>
-          </div>
-          <div class="service-content">
-            <div class="service-icon"><i class="fas fa-file-invoice-dollar"></i></div>
-            <h3>GST Services</h3>
-            <p>Registration, return filing, refunds, and compliance management for complete GST peace of mind.</p>
-            <a href="gst-services.html" class="btn-link-gold">Learn More <i class="fas fa-arrow-right"></i></a>
-          </div>
+    <div class="row g-3" data-aos="fade-up" data-aos-delay="100">
+      <div class="col-lg-6">
+        <div class="service-item-card">
+          <div class="sic-icon"><i class="fas fa-building"></i></div>
+          <div><div class="sic-title">Company Incorporation</div><p class="sic-desc">Complete MCA registration including name reservation, DIN, DSC, MOA and AOA drafting, and Certificate of Incorporation for all entity types.</p></div>
         </div>
       </div>
-      <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
-        <div class="service-card h-100">
-          <div class="service-img-wrapper">
-            <img src="images/income.png" alt="Income Tax">
-            <div class="service-img-overlay"></div>
-          </div>
-          <div class="service-content">
-            <div class="service-icon"><i class="fas fa-rupee-sign"></i></div>
-            <h3>Income Tax & TDS</h3>
-            <p>ITR filing, TDS compliance, advance tax planning, and representation before tax authorities.</p>
-            <a href="income-tax.html" class="btn-link-gold">Learn More <i class="fas fa-arrow-right"></i></a>
-          </div>
+      <div class="col-lg-6">
+        <div class="service-item-card">
+          <div class="sic-icon"><i class="fas fa-trademark"></i></div>
+          <div><div class="sic-title">Trademark Registration</div><p class="sic-desc">Brand protection under the Trade Marks Act - name and logo search, application filing, examination response, and registration certificate.</p></div>
         </div>
       </div>
-      <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
-        <div class="service-card h-100">
-          <div class="service-img-wrapper">
-            <img src="images/company.png" alt="Business Registration" onerror="this.src='https://placehold.co/600x300/0F0F0F/C9A227?text=Business+Registration'">
-            <div class="service-img-overlay"></div>
-          </div>
-          <div class="service-content">
-            <div class="service-icon"><i class="fas fa-briefcase"></i></div>
-            <h3>Business Registration</h3>
-            <p>Company incorporation, trademark, MSME, FSSAI and all essential business licenses handled end-to-end.</p>
-            <a href="business-registration.html" class="btn-link-gold">Learn More <i class="fas fa-arrow-right"></i></a>
-          </div>
+      <div class="col-lg-6">
+        <div class="service-item-card">
+          <div class="sic-icon"><i class="fas fa-certificate"></i></div>
+          <div><div class="sic-title">MSME and Udyam Registration</div><p class="sic-desc">Udyam portal registration to access government schemes, subsidies, priority sector lending, and export promotion benefits.</p></div>
         </div>
       </div>
-      <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="0">
-        <div class="service-card h-100">
-          <div class="service-img-wrapper">
-            <img src="images/imports.png" alt="Import Export" onerror="this.src='https://placehold.co/600x300/0F0F0F/C9A227?text=Import+Export'">
-            <div class="service-img-overlay"></div>
-          </div>
-          <div class="service-content">
-            <div class="service-icon"><i class="fas fa-globe"></i></div>
-            <h3>Import & Export Trade</h3>
-            <p>IEC registration, customs compliance, and all regulatory requirements for international business.</p>
-            <a href="import-export.html" class="btn-link-gold">Learn More <i class="fas fa-arrow-right"></i></a>
-          </div>
+      <div class="col-lg-6">
+        <div class="service-item-card">
+          <div class="sic-icon"><i class="fas fa-utensils"></i></div>
+          <div><div class="sic-title">FSSAI License</div><p class="sic-desc">Food Safety registration and license for all food businesses - basic, state, and central level with annual renewal support.</p></div>
         </div>
       </div>
-      <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
-        <div class="service-card h-100">
-          <div class="service-img-wrapper">
-            <img src="images/corporate-compliances.png" alt="Corporate Compliance" onerror="this.src='https://placehold.co/600x300/0F0F0F/C9A227?text=Corporate+Compliance'">
-            <div class="service-img-overlay"></div>
-          </div>
-          <div class="service-content">
-            <div class="service-icon"><i class="fas fa-building"></i></div>
-            <h3>Corporate Compliance</h3>
-            <p>ROC filings, PF/ESI management, secretarial duties, and MCA annual compliance for companies.</p>
-            <a href="corporate-compliance.html" class="btn-link-gold">Learn More <i class="fas fa-arrow-right"></i></a>
-          </div>
+      <div class="col-lg-6">
+        <div class="service-item-card">
+          <div class="sic-icon"><i class="fas fa-store"></i></div>
+          <div><div class="sic-title">Shop and Establishment Act</div><p class="sic-desc">State-specific registration for retail shops, offices, and service establishments as required by local labour laws.</p></div>
         </div>
       </div>
-      <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
-        <div class="service-card h-100">
-          <div class="service-img-wrapper">
-            <img src="images/advice.png" alt="Financial Advisory" onerror="this.src='https://placehold.co/600x300/0F0F0F/C9A227?text=Financial+Advisory'">
-            <div class="service-img-overlay"></div>
-          </div>
-          <div class="service-content">
-            <div class="service-icon"><i class="fas fa-chart-line"></i></div>
-            <h3>Financial Advisory</h3>
-            <p>Bookkeeping, MIS reporting, CFO advisory services, and strategic financial planning for growth.</p>
-            <a href="accounting.html" class="btn-link-gold">Learn More <i class="fas fa-arrow-right"></i></a>
-          </div>
+      <div class="col-lg-6">
+        <div class="service-item-card">
+          <div class="sic-icon"><i class="fas fa-city"></i></div>
+          <div><div class="sic-title">Corporation and Trade License</div><p class="sic-desc">Municipal trade license for running any commercial establishment - we handle applications and annual renewals for all corporations.</p></div>
         </div>
       </div>
-    </div>
-    <div class="text-center mt-5" data-aos="fade-up">
-      <a href="services.html" class="btn-outline-gold"><i class="fas fa-th-large"></i> View All Services</a>
+      <div class="col-lg-6">
+        <div class="service-item-card">
+          <div class="sic-icon"><i class="fas fa-shield-alt"></i></div>
+          <div><div class="sic-title">Security License - PSARA</div><p class="sic-desc">Private Security Agency Regulation Act license for security businesses - documentation, training coordination, and multi-state licensing.</p></div>
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <div class="service-item-card">
+          <div class="sic-icon"><i class="fas fa-id-badge"></i></div>
+          <div><div class="sic-title">Other Licenses and Registrations</div><p class="sic-desc">Professional Tax, Labour License, Drug License, RCMC, and all industry-specific registrations managed end-to-end.</p></div>
+        </div>
+      </div>
     </div>
   </div>
 </section>
-
-<!-- ===================== TESTIMONIALS ===================== -->
-<section id="testimonials">
+<section class="info-section">
   <div class="container">
-    <div class="section-title" data-aos="fade-up">
-      <span class="overline">Client Stories</span>
-      <h2>What Our Clients Say</h2>
-      <div class="title-line"><span></span><i class="fas fa-diamond"></i><span></span></div>
-      <p class="subtitle">We are honoured by the trust our clients place in us. Here's what they have to say about working with 5S Tax Solutions.</p>
-    </div>
-    <div class="testimonial-swiper swiper" data-aos="fade-up" data-aos-delay="100">
-      <div class="swiper-wrapper">
-        <div class="swiper-slide">
-          <div class="testimonial-card">
-            <div class="quote-icon">"</div>
-            <img src="https://placehold.co/70x70/1E1E1E/C9A227?text=R" alt="Raju">
-            <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
-            <p>"5S Tax Solutions transformed our entire approach to GST compliance. Their team is incredibly knowledgeable and always proactive. Highly recommended for any business."</p>
-            <span class="client-name">Raju</span>
-            <span class="client-role">Small Business Owner</span>
-          </div>
-        </div>
-        <div class="swiper-slide">
-          <div class="testimonial-card">
-            <div class="quote-icon">"</div>
-            <img src="https://placehold.co/70x70/1E1E1E/C9A227?text=K" alt="Kishor">
-            <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
-            <p>"The personalized service I received was exceptional. They helped me understand complex tax laws and saved me a significant amount of money. Truly fantastic professionals."</p>
-            <span class="client-name">Kishor</span>
-            <span class="client-role">Individual Client</span>
-          </div>
-        </div>
-        <div class="swiper-slide">
-          <div class="testimonial-card">
-            <div class="quote-icon">"</div>
-            <img src="https://placehold.co/70x70/1E1E1E/C9A227?text=V" alt="Vimal">
-            <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
-            <p>"Professional, efficient, and reliable. 5S Tax Solutions handled our company's GST registration seamlessly. A truly trustworthy partner for all our tax needs."</p>
-            <span class="client-name">Vimal</span>
-            <span class="client-role">Startup Founder</span>
-          </div>
-        </div>
-        <div class="swiper-slide">
-          <div class="testimonial-card">
-            <div class="quote-icon">"</div>
-            <img src="https://placehold.co/70x70/1E1E1E/C9A227?text=S" alt="Ramya">
-            <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
-            <p>"The team's commitment to excellence is evident in everything they do. They are proactive, responsive, and incredibly thorough. I couldn't be happier with their service."</p>
-            <span class="client-name">Ramya</span>
-            <span class="client-role">Freelancer</span>
-          </div>
-        </div>
+    <div class="row g-5 align-items-start">
+      <div class="col-lg-6" data-aos="fade-right">
+        <span class="overline" style="font-family:'Raleway',sans-serif;font-size:.75rem;font-weight:700;letter-spacing:.3em;text-transform:uppercase;color:var(--gold);display:block;margin-bottom:12px;">What You Need</span>
+        <h2 style="margin-bottom:24px;">Common Documents Required</h2>
+        <ul class="doc-list"><li><i class="fas fa-id-card"></i>PAN and Aadhaar of all directors, partners, or proprietor</li><li><i class="fas fa-file-image"></i>Passport-size photographs of directors or partners</li><li><i class="fas fa-home"></i>Proof of registered office address - utility bill or rent agreement</li><li><i class="fas fa-envelope"></i>Email ID and mobile number for all directors</li><li><i class="fas fa-university"></i>Bank account details for the proposed business</li><li><i class="fas fa-file-contract"></i>Digital Signature Certificate - we assist in obtaining</li><li><i class="fas fa-file-pdf"></i>NOC from property owner if registered address is rented</li><li><i class="fas fa-file-alt"></i>Draft object clause and business activity details</li></ul>
+        <div class="note-box mt-4"><p><i class="fas fa-info-circle" style="color:var(--gold);margin-right:8px;"></i><strong style="color:var(--white);">Note:</strong> Our team provides a tailored checklist after your free consultation.</p></div>
       </div>
-      <div class="swiper-pagination"></div>
+      <div class="col-lg-6" data-aos="fade-left">
+        <span class="overline" style="font-family:'Raleway',sans-serif;font-size:.75rem;font-weight:700;letter-spacing:.3em;text-transform:uppercase;color:var(--gold);display:block;margin-bottom:12px;">Key Advantages</span>
+        <h2 style="margin-bottom:24px;">Why Register Your Business</h2>
+        <ul class="benefit-list"><li><div class="check-icon"><i class="fas fa-check"></i></div><div><strong>Limited Liability</strong> - Incorporated entities offer personal liability protection - your personal assets stay safe.</div></li><li><div class="check-icon"><i class="fas fa-check"></i></div><div><strong>Access to Credit</strong> - Registered businesses easily obtain loans, overdrafts, and equity investment.</div></li><li><div class="check-icon"><i class="fas fa-check"></i></div><div><strong>Brand Protection</strong> - Trademark registration prevents competitors from copying your brand identity.</div></li><li><div class="check-icon"><i class="fas fa-check"></i></div><div><strong>Government Schemes</strong> - MSME registration unlocks dozens of subsidies and priority sector loan benefits.</div></li><li><div class="check-icon"><i class="fas fa-check"></i></div><div><strong>Customer Trust</strong> - Customers and B2B partners trust formally registered entities significantly more.</div></li><li><div class="check-icon"><i class="fas fa-check"></i></div><div><strong>Tax Advantages</strong> - Incorporated entities enjoy deductions unavailable to unregistered businesses.</div></li></ul>
+      </div>
     </div>
   </div>
 </section>
-
-<!-- ===================== CONTACT ===================== -->
-<section id="contact-us">
+<section style="padding:70px 0;background:var(--black);">
   <div class="container">
-    <div class="section-title" data-aos="fade-up">
-      <span class="overline">Get In Touch</span>
-      <h2>Let's Work Together</h2>
-      <div class="title-line"><span></span><i class="fas fa-diamond"></i><span></span></div>
-      <p class="subtitle">Have a question or ready to get started? Our expert team is here to help.</p>
-    </div>
-    <div class="contact-wrapper" data-aos="fade-up" data-aos-delay="100">
-      <div class="row g-0">
-        <div class="col-lg-4">
-          <div class="contact-info-panel">
-            <h3>Contact Information</h3>
-            <p>Reach out to us through any of the channels below or fill out the form.</p>
-            <div class="contact-info-item">
-              <div class="icon-wrap"><i class="fas fa-map-marker-alt"></i></div>
-              <div class="info-text">
-                <strong>Office Address</strong>
-                <span>Chennai, Tamilnadu — 600028</span>
-              </div>
-            </div>
-            <div class="contact-info-item">
-              <div class="icon-wrap"><i class="fas fa-phone-alt"></i></div>
-              <div class="info-text">
-                <strong>Phone</strong>
-                <span>+91 86819 81471</span>
-              </div>
-            </div>
-            <div class="contact-info-item">
-              <div class="icon-wrap"><i class="fas fa-envelope"></i></div>
-              <div class="info-text">
-                <strong>Email</strong>
-                <span>5staxsolutionca@gmail.com</span>
-              </div>
-            </div>
-            <div class="contact-info-item">
-              <div class="icon-wrap"><i class="fas fa-clock"></i></div>
-              <div class="info-text">
-                <strong>Business Hours</strong>
-                <span>Mon–Sat: 9:00 AM – 7:00 PM</span>
-              </div>
-            </div>
-            <div class="contact-social">
-              <a href="#"><i class="fab fa-facebook-f"></i></a>
-              <a href="#"><i class="fab fa-linkedin-in"></i></a>
-              <a href="#"><i class="fab fa-instagram"></i></a>
-              <a href="#"><i class="fab fa-whatsapp"></i></a>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-8">
-          <div class="contact-form-panel">
-            <h3>Send Us a Message</h3>
-            <p>We'll get back to you within 24 business hours.</p>
-
-            <!-- SUCCESS BANNER (hidden by default) -->
-            <div id="formSuccess" style="display:none; background:rgba(255,184,0,0.08); border:1px solid rgba(255,184,0,0.5); border-left:4px solid #FFB800; border-radius:10px; padding:20px 24px; margin-bottom:24px;">
-              <div style="display:flex;align-items:center;gap:12px;">
-                <i class="fas fa-check-circle" style="color:#FFB800;font-size:1.4rem;text-shadow:0 0 10px rgba(255,184,0,0.6);"></i>
-                <div>
-                  <div style="font-weight:800;color:#FFD700;font-size:1rem;margin-bottom:3px;">Message Sent Successfully!</div>
-                  <div style="font-size:0.85rem;color:#AAAAAA;">Thank you! We'll get back to you within 24 business hours.</div>
-                </div>
-              </div>
-            </div>
-
-            <form id="contactForm"
-                  action="https://formsubmit.co/5staxsolutionca@gmail.com"
-                  method="POST">
-
-              <!-- FormSubmit Hidden Config -->
-              <input type="hidden" name="_subject" value="New Consultation Request — 5S Tax Solutions">
-              <input type="hidden" name="_captcha" value="false">
-              <input type="hidden" name="_template" value="table">
-              <input type="hidden" name="_next" value="thank-you.html">
-              <!-- Honeypot spam trap -->
-              <input type="text" name="_honey" style="display:none">
-
-              <div class="row g-3">
-                <div class="col-md-6">
-                  <label class="form-label">Your Name *</label>
-                  <input type="text" name="name" class="form-control" placeholder="John Doe" required>
-                </div>
-                <div class="col-md-6">
-                  <label class="form-label">Email Address *</label>
-                  <input type="email" name="email" class="form-control" placeholder="5staxsolutionca@gmail.com" required>
-                </div>
-                <div class="col-md-6">
-                  <label class="form-label">Phone Number</label>
-                  <input type="tel" name="phone" class="form-control" placeholder="+91 00000 00000">
-                </div>
-                <div class="col-md-6">
-                  <label class="form-label">Service Required</label>
-                  <select name="service" class="form-control form-select">
-                    <option value="">Select a Service</option>
-                    <option>GST Services</option>
-                    <option>Income Tax &amp; TDS</option>
-                    <option>Business Registration</option>
-                    <option>Import / Export</option>
-                    <option>Corporate Compliance</option>
-                    <option>Financial Advisory</option>
-                    <option>Other / General Query</option>
-                  </select>
-                </div>
-                <div class="col-12">
-                  <label class="form-label">Your Message</label>
-                  <textarea name="message" class="form-control" rows="4" placeholder="Tell us about your requirements..."></textarea>
-                </div>
-                <div class="col-12">
-                  <button type="submit" id="submitBtn" class="btn-gold w-100" style="justify-content:center;">
-                    <i class="fas fa-paper-plane"></i> Send Message
-                  </button>
-                </div>
-              </div>
-            </form>
-          </div>
-        </div>
+    <div class="cta-box" data-aos="fade-up">
+      <h2>Get Expert <span style="background:var(--gold-gradient);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;">Business Registration</span> Assistance</h2>
+      <p>Our specialist team is ready to help. Book a free 30-minute consultation today.</p>
+      <div style="display:flex;gap:16px;justify-content:center;flex-wrap:wrap;position:relative;z-index:10;pointer-events:auto;">
+        <a href="index.html#contact-us" class="btn-gold" style="font-size:0.9rem;padding:14px 36px;"><i class="fas fa-calendar-check"></i> Book Free Consultation</a>
+        <a href="services.html" class="btn-outline-gold" style="font-size:0.9rem;padding:13px 35px;"><i class="fas fa-arrow-left"></i> All Services</a>
       </div>
     </div>
   </div>
 </section>
-
-<!-- ===================== FOOTER ===================== -->
 <footer>
   <div class="container">
     <div class="row g-5">
       <div class="col-lg-4 col-md-12 footer-brand">
         <div class="brand-text mb-2">5S Tax Solutions</div>
-        <p>Your trusted partner for comprehensive tax, compliance, and financial advisory services. We simplify complexity so you can focus on growth.</p>
+        <p>Your trusted partner for comprehensive tax, compliance, and financial advisory services.</p>
         <div class="social-icons">
           <a href="#"><i class="fab fa-facebook-f"></i></a>
-          <a href="#"><i class="fab fa-twitter"></i></a>
           <a href="#"><i class="fab fa-linkedin-in"></i></a>
           <a href="#"><i class="fab fa-instagram"></i></a>
           <a href="#"><i class="fab fa-whatsapp"></i></a>
@@ -850,181 +522,51 @@ footer { background: var(--black-2); border-top: 1px solid var(--border-bright);
       <div class="col-lg-2 col-md-4 footer-col">
         <h5>Quick Links</h5>
         <ul class="footer-links">
-          <li><a href="index.html#banner">Home</a></li>
-          <li><a href="index.html#why-choose-us">About Us</a></li>
+          <li><a href="index.html">Home</a></li>
           <li><a href="services.html">All Services</a></li>
-          <li><a href="index.html#testimonials">Testimonials</a></li>
-          <li><a href="index.html#contact-us">Contact Us</a></li>
+          <li><a href="index.html#contact-us">Contact</a></li>
         </ul>
       </div>
       <div class="col-lg-3 col-md-4 footer-col">
         <h5>Our Services</h5>
         <ul class="footer-links">
           <li><a href="gst-services.html">GST Services</a></li>
-          <li><a href="income-tax.html">Income Tax & TDS</a></li>
+          <li><a href="income-tax.html">Income Tax &amp; TDS</a></li>
           <li><a href="business-registration.html">Business Registration</a></li>
-          <li><a href="import-export.html">Import & Export</a></li>
+          <li><a href="import-export.html">Import &amp; Export</a></li>
           <li><a href="corporate-compliance.html">Corporate Compliance</a></li>
           <li><a href="accounting.html">Financial Advisory</a></li>
           <li><a href="identity-services.html">Identity &amp; Govt Services</a></li>
         </ul>
       </div>
-      <div class="col-lg-3 col-md-4 footer-col">
+       <div class="col-lg-3 col-md-4 footer-col">
         <h5>Contact Info</h5>
-        <div class="footer-contact-item">
-          <i class="fas fa-map-marker-alt"></i>
-          <span>Chennai, Tamilnadu — 600028</span>
-        </div>
-        <div class="footer-contact-item">
-          <i class="fas fa-phone-alt"></i>
-          <span>+91 86819 81471</span>
-        </div>
-           <div class="footer-contact-item"><i class="fas fa-envelope"></i><span>5staxsolutionca@gmail.com</span></div>
-        <div class="footer-contact-item">
-          <i class="fas fa-clock"></i>
-          <span>Mon–Sat: 9:00 AM – 7:00 PM</span>
-        </div>
+        <div class="footer-contact-item"><i class="fas fa-phone-alt"></i><span>+91 98765 43210</span></div> 
+        <div class="footer-contact-item"><i class="fas fa-envelope"></i><span>5staxsolutionca@gmail.com</span></div>
+        <div class="footer-contact-item"><i class="fas fa-clock"></i><span>Mon-Sat: 9:00 AM - 7:00 PM</span></div>
       </div>
     </div>
     <div class="footer-bottom">
-      <p>&copy; 2025 5S Tax Solutions. All Rights Reserved. | Crafted by Yuvakishor.</p>
-      <div class="footer-bottom-links">
-        <a href="#">Privacy Policy</a>
-        <a href="#">Terms of Service</a>
-        <a href="#">Disclaimer</a>
-      </div>
+      <p>&copy; 2025 5S Tax Solutions. All Rights Reserved.Crafted by Yuvakishor.</p>
+      <div class="footer-bottom-links"><a href="#">Privacy Policy</a><a href="#">Terms</a></div>
     </div>
   </div>
 </footer>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
-<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 <script>
-document.addEventListener('DOMContentLoaded', function () {
-  if (typeof AOS !== 'undefined') AOS.init({ duration: 900, once: true, offset: 80 });
-
-  // Navbar scroll
-  var navbar = document.getElementById('navbar');
-  if (navbar) {
-    window.addEventListener('scroll', function() {
-      navbar.style.background = window.scrollY > 60 ? 'rgba(8,8,8,0.99)' : 'rgba(8,8,8,0.97)';
-    });
-  }
-
-  // Active nav on scroll
-  var sections = document.querySelectorAll('section[id]');
-  var navLinks = document.querySelectorAll('.navbar-nav .nav-link:not(.dropdown-toggle)');
-  window.addEventListener('scroll', function() {
-    var current = '';
-    sections.forEach(function(s) {
-      if (window.scrollY >= s.offsetTop - 120) current = s.id;
-    });
-    navLinks.forEach(function(link) {
-      link.classList.remove('active');
-      if (link.getAttribute('href') && link.getAttribute('href').includes(current)) {
-        link.classList.add('active');
-      }
+  if (typeof AOS !== 'undefined') AOS.init({duration:900, once:true, offset:70});
+  var nb = document.getElementById('navbar');
+  if (nb) window.addEventListener('scroll', function() {
+    nb.style.background = window.scrollY > 60 ? 'rgba(8,8,8,0.99)' : 'rgba(8,8,8,0.97)';
+  });
+  var glow = document.querySelector('.cursor-glow');
+  if (glow) document.addEventListener('mousemove', function(e) {
+    requestAnimationFrame(function() {
+      glow.style.left = e.clientX + 'px';
+      glow.style.top  = e.clientY + 'px';
     });
   });
-
-  // Animated counters
-  var statsSection = document.querySelector('#stats');
-  var counters = document.querySelectorAll('.stat-number');
-  var counted = false;
-  if (statsSection && counters.length) {
-    var observer = new IntersectionObserver(function(entries) {
-      if (entries[0].isIntersecting && !counted) {
-        counted = true;
-        counters.forEach(function(counter) {
-          var target = +counter.getAttribute('data-target');
-          var count = 0;
-          var step = Math.ceil(target / 80);
-          var timer = setInterval(function() {
-            count = Math.min(count + step, target);
-            counter.textContent = count;
-            if (count >= target) {
-              counter.textContent = target + '+';
-              clearInterval(timer);
-            }
-          }, 18);
-        });
-      }
-    }, { threshold: 0.5 });
-    observer.observe(statsSection);
-  }
-
-  // Swiper
-  if (typeof Swiper !== 'undefined') {
-    new Swiper('.testimonial-swiper', {
-      slidesPerView: 1,
-      spaceBetween: 24,
-      loop: true,
-      speed: 700,
-      autoplay: { delay: 4500, disableOnInteraction: false },
-      pagination: { el: '.swiper-pagination', clickable: true },
-      breakpoints: {
-        768:  { slidesPerView: 2, spaceBetween: 24 },
-        1200: { slidesPerView: 3, spaceBetween: 28 }
-      }
-    });
-  }
-
-  // Cursor glow
-  var glow = document.querySelector('.cursor-glow');
-  if (glow) {
-    document.addEventListener('mousemove', function(e) {
-      requestAnimationFrame(function() {
-        glow.style.left = e.clientX + 'px';
-        glow.style.top  = e.clientY + 'px';
-      });
-    });
-  }
-
-  // Contact Form
-  var contactForm = document.getElementById('contactForm');
-  var submitBtn   = document.getElementById('submitBtn');
-  var formSuccess = document.getElementById('formSuccess');
-
-  if (contactForm) {
-    contactForm.addEventListener('submit', async function(e) {
-      e.preventDefault();
-      submitBtn.disabled = true;
-      submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Sending...';
-      var formData = new FormData(contactForm);
-      try {
-        var response = await fetch('https://formsubmit.co/ajax/5staxsolutionca@gmail.com', {
-          method: 'POST',
-          headers: { 'Accept': 'application/json' },
-          body: formData
-        });
-        if (response.ok) {
-          if (formSuccess) {
-            formSuccess.style.display = 'block';
-            formSuccess.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
-          }
-          contactForm.reset();
-          submitBtn.innerHTML = '<i class="fas fa-check"></i> Sent!';
-          submitBtn.style.background = 'linear-gradient(135deg,#2d8a4e,#1e6b3a)';
-          setTimeout(function() {
-            submitBtn.disabled = false;
-            submitBtn.innerHTML = '<i class="fas fa-paper-plane"></i> Send Message';
-            submitBtn.style.background = '';
-          }, 5000);
-        } else {
-          throw new Error('failed');
-        }
-      } catch(err) {
-        submitBtn.disabled = false;
-        submitBtn.innerHTML = '<i class="fas fa-exclamation-triangle"></i> Failed - Try Again';
-        submitBtn.style.background = 'linear-gradient(135deg,#8a2d2d,#6b1e1e)';
-        setTimeout(function() {
-          submitBtn.innerHTML = '<i class="fas fa-paper-plane"></i> Send Message';
-          submitBtn.style.background = '';
-        }, 4000);
-      }
-    });
-  }
-});
 </script>
 </body>
 </html>
